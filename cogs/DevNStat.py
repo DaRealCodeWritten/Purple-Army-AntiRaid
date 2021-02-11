@@ -75,8 +75,7 @@ class DevNStats(commands.Cog):
             'guild': ctx.guild,
             'message': ctx.message,
             '_': self._last_result,
-            'mod_env': self,
-            '': 
+            'mod_env': self
         }
 
 		env.update(globals())
