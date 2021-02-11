@@ -1,6 +1,7 @@
 #pylint:disable=W0611
 #pylint:disable=C0304
 import discord
+import os
 from discord.ext import commands as cmds
 from datetime import datetime
 bot = cmds.Bot(command_prefix="//", case_insensitive=True, intents=discord.Intents.all())
@@ -43,4 +44,4 @@ bot.load_extension("cogs.antiraid")
 bot.load_extension("cogs.UserManagement")
 bot.load_extension("cogs.DevNStat")
 
-bot.run("ODAxOTA5NTI5MzYwMjAzNzg4.YAnicg._tZFrP99_66chtLSUqlA1biTyac")
+bot.run(os.environ.get("token"))
